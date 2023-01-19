@@ -3,66 +3,48 @@ from datetime import date
 
 all_posts = [
     {
-        "slug": "hike-in-the-mountains",
+        "slug": "Hiking-in-the-mountains",
         "image": "mountains.jpg",
-        "author": "Douglous",
+        "author": "Douglous Mangoyi",
         "date": date(2023, 1, 18),
         "title": "Mountain Hiking",
-        "excerpt": "There's nothing like the views you get when hiking in the mountains! And I wasn't even prepared for what happened whilst I was enjoying the view!",
+        "excerpt": "There's nothing  which is much great like the views you get when hiking in the mountains! And I wasn't even prepared for what happened but I was enjoying the view!",
         "content": """
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+          The mountain features were looking beatiful and very attractive. Both the rocks, trees and grass were some of the features that made the mountain to look great.
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+          The mountain's climate was cool. Had favorable weather conditions that made my hiking enjoyable. The fresh air made me feel relaxed and forgot about stress.
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+          Therefore, it is good to explore the world to discover its beatiful surroundings.
         """
     },
     {
         "slug": "programming-is-fun",
         "image": "coding.jpg",
-        "author": "Douglous",
+        "author": "Douglous Mangoyi",
         "date": date(2023, 1, 19),
         "title": "Programming Is Great!",
         "excerpt": "Did you ever spend hours searching that one error in your code? Yep - that's what happened to me yesterday...",
         "content": """
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+          Programming is such a fun. It keeps the mind active and fresh than ever. 
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+          Because of its logical and real nature programming is one of the tools used to solve world's biggest problems in a critical way.
+          
+          I don't regret beaing a programmer because am part of the problem solvers.
         """
     },
     {
         "slug": "into-the-woods",
         "image": "woods.jpg",
-        "author": "Douglous",
+        "author": "Douglous Mangoyi",
         "date": date(2023, 1, 20),
         "title": "Nature At Its Best",
         "excerpt": "Nature is amazing! The amount of inspiration I get when walking in nature is incredible!",
         "content": """
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+         There is freshness when having good time with nature since it entertaining and wonderful.
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+          Nature makes you explore the green vegetation which makes the world's physical appearance great.
+          
+          It is my liking to explore and have clear detail of what nature looks like.
         """
     }
 ]
