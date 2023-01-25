@@ -12,7 +12,8 @@ class My_books(models.Model):
     title = models.CharField(max_length=60)
     rating = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(6)])
-    author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True)
+    author = models.ForeignKey(
+        Author, on_delete=models.CASCADE, null=True, related_name="books")
     is_bestselling = models.BooleanField(default=False)
     slug = models.SlugField(default="", blank=True,
                             null=False, db_index=True)
