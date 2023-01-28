@@ -7,8 +7,11 @@
     <title>Your Review</title>
 </head>
 <body>
-    <form method="Post">
+    <form action="/" method="Post">
         {% csrf_token %}
+        {% if has_error %}
+            <p>The form is incorrect, please enter a correct username</p>
+        {% endif %}
         <label for="username">Your name</label>
         <input id="username" name="username" type="text">
         <button type="submit">Send</button>
