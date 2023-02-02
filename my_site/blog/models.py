@@ -31,3 +31,10 @@ class Post(models.Model):
     author = models.ForeignKey(
         Author, on_delete=models.SET_NULL, null=True, related_name="posts")
     tags = models.ManyToManyField(Tag)
+
+class comment(models.Model):
+    user_name = models.CharField(max_length=150)
+    user_email = models.EmailField()
+    text = models.TextField(max_length=450)
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name="comments")
