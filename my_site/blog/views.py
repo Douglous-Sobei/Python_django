@@ -27,28 +27,28 @@ class allpostsview(ListView):
 
 class singlepostview(View):
     def get(self, request, slug):
-        post = Post.objects.get(slug=slug)
-        context = {
-            "post": post,
-            "post_tags": post.tags.all(),
-            "comment": commentform()
-        }
-        return render(request, "blog/post-detail.html", context)
+      post = Post.objects.get(slug=slug)
+      context = {
+          "post": post,
+          "post_tags": post.tags.all(),
+          "comment_form": commentform()
+      }
+      return render(request, "blog/post-detail.html", context)
 
     def post(self, request, slug):
-        comment = commentform(request.POST)
+        comment_form = commentform(request.POST)
         post = Post.objects.get(slug=slug)
 
-        if comment.is_valid():
-            Comment = comment.save(commit=False)
-            Comment.post = post
-            Comment.save()
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.post = post
+            comment.save()
             
             return HttpResponseRedirect(reverse("post-detail-page", args=[slug]))
 
         context = {
             "post": post,
             "post_tags": post.tags.all(),
-            "comment": commentform
+            "comment_form": commentform
         }
         return render(request, "blog/post-detail.html", context) 
