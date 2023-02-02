@@ -29,5 +29,5 @@ class singlepostview(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["post_tags"] = self.object.tags.all()
-        context["comment_form"] = commentform()
+        context["comment"] = commentform()
         return context
