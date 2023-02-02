@@ -54,4 +54,8 @@ class singlepostview(View):
             "comments": post.comments.all().order_by("-id")
       }
         
-        return render(request, "blog/post-detail.html", context) 
+        return render(request, "blog/post-detail.html", context)
+    
+class ReadLaterView(View):
+    def pos(self, request):
+        pass
