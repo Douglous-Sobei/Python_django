@@ -1,5 +1,5 @@
 # Python_django
-## About the course
+## About the Project
 - Setup and understanding Django projects
 - URLs, Routes and views
 - Templates and static files
