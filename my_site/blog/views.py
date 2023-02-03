@@ -16,13 +16,13 @@ class StartPageView(ListView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        data = queryset[:3]
+        data = queryset[:2]
         return data
 
 class allpostsview(ListView):
     template_name = "blog/all-posts.html"
     model = Post
-    ordering = ["-date"]
+    ordering = ["date"]
     context_object_name = "all_posts"
 
 class singlepostview(View):
