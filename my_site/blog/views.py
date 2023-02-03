@@ -16,7 +16,7 @@ class StartPageView(ListView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        data = queryset[:2]
+        data = queryset[:3]
         return data
 
 class allpostsview(ListView):
